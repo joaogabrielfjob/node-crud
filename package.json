@@ -7,10 +7,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
-    "typeorm": "ts-node-dev node_modules/.bin/typeorm"
+    "typeorm": "ts-node-dev node_modules/.bin/typeorm",
+    "test": "tsc && jest ./dist",
+    "coverage": "tsc && jest ./dist --coverage"
   },
   "dependencies": {
+    "@types/jest": "^27.0.3",
     "express": "^4.17.1",
+    "jest": "^27.4.5",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.41",
