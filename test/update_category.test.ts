@@ -12,7 +12,7 @@ afterAll(async () => {
 test('should update category', async () => {
   const service = new UpdateCategoryService()
 
-  const result = await service.execute({ id: 'c1aa91e2-34ac-4f0e-b445-a29908b32d4e', name: 'Categoria Teste', description: 'Descrição Teste'})
+  const result = await service.execute({ id: 'b45d6d8d-33ff-4e0b-8fec-b8d68638ba49', name: 'Categoria Teste', description: 'Descrição Teste'})
 
   expect(result.name).toBe('Categoria Teste')
 })

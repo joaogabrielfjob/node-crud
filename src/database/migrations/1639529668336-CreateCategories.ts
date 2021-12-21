@@ -14,8 +14,7 @@ export class CreateCategories1639529668336 implements MigrationInterface {
           },
           {
             name: 'name',
-            type: 'varchar',
-            isUnique: true
+            type: 'varchar'
           },
           {
             name: 'description',

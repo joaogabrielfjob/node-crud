@@ -12,7 +12,7 @@ afterAll(async () => {
 test('should create category', async () => {
   const service = new CreateCategoryService()
 
-  const result = await service.execute({ name: 'Categoria Teste A', description: 'Descrição Teste A'})
+  const result = await service.execute({ name: 'Categoria Teste B', description: 'Descrição Teste B' })
 
-  expect(result.name).toBe('Categoria Teste A')
+  expect(result.name).toBe('Categoria Teste B')
 })

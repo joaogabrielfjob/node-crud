@@ -17,8 +17,6 @@ export class CreateVideoService {
 
     if (!await repoCategory.findOne(category_id)) return new Error('category does not exists')
 
-    if (await repo.findOne({ name })) return new Error('video already exists')
-
     const video = repo.create({
       name,
       description,
