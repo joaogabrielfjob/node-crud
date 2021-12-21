@@ -1,0 +1,1 @@
+module.exports = { setupFiles: ['<rootDir>/.jest/set_env_vars.js'] }
