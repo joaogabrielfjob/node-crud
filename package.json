@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
     "typeorm": "ts-node-dev node_modules/.bin/typeorm",
-    "test": "tsc && jest ./dist",
+    "test": "tsc && jest ./dist --detectOpenHandles",
     "coverage": "tsc && jest ./dist --coverage"
   },
   "dependencies": {
