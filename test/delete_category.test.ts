@@ -12,10 +12,11 @@ afterAll(async () => {
 })
 
 test('should delete category', async () => {
-  const service = new DeleteCategoryService()
-  const categoryService = new CreateCategoryService();
+  const categoryService = new CreateCategoryService()
 
   const category = await categoryService.execute({ name: 'Categoria Temp', description: 'Descrição Temp' }) as Category
+
+  const service = new DeleteCategoryService()
 
   const result = await service.execute(category.id)
 
