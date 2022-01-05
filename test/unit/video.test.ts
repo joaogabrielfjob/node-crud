@@ -1,4 +1,4 @@
-import Video from '../../src/domain/entity/video'
+import Video from '../../src/catalog/domain/entity/video'
 
 test('should create a video', function() {
   const video = new Video(1, 'real name', 'real description', 120, 1)
